@@ -1,0 +1,34 @@
+title: Adventure of Palash # The title of the blog
+author: Palash Bauri # Your name 
+email: heypalash@yandex.com # your email shown in the footer
+url: https://en.palashbauri.in # this is your site's root address.
+baseurl: /
+description: > # this means to ignore newlines until "show_excerpts:"
+  Lunatic Boy's Blog to Make this World a Better Place
+favicon: "./favicon.png" # set the favicon of the site 
+cover: assets/img/page.png
+show_excerpts: true # set to true to show excerpts on the homepage
+lang: bn
+
+banner_cover: assets/img/pluto-deliveryx.png
+  
+# Moving date format
+# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+social:
+  facebook: bauripalash
+  instagram: bauripalash
+  twitter: bauripalash
+
+permalink: /en/:title
+paginate: 6
+paginate_path: /page:num/
+
+
+# Build settings
+#theme: moving # note, please use huangyz0918/moving if you want to publish to Github Pages.
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap

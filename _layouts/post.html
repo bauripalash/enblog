@@ -1,0 +1,59 @@
+---
+layout: default
+disqus: true
+---
+<nav class="navbar navbar-light navbar-expand-md navigation-clean">
+    <div class="container"><a class="navbar-brand" href="/">PALASH BAURI 👻</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navcol">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item" role="presentation"><a class="nav-link" href="/">HOME</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link active" href="/about">ABOUT</a></li>
+                <li class="nav-item" role="presentation"></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div>
+    <div class="container">
+        <div class="text-center">
+            <span class="postpage-datetag">{{page.date | date: "%-d %B %Y" }} /
+                {% if page.tags.size > 0 %}
+                {% for tag in page.tags %}
+                {% if forloop.index == page.tags.size %}
+                <a href='{{ site.baseurl }}tag/{{ tag | downcase | replace: ' ', '-' }}/'>{{ tag | upcase }}</a>
+                {% else %}
+                <a href='{{ site.baseurl }}tag/{{ tag | downcase | replace: ' ', '-' }}/'>{{ tag | upcase }}</a>,
+                {% endif %}
+                {% endfor %}
+                {% endif %}
+            </span>
+            <h1 class="postpage-title">{{page.title}}</h1>
+            {% if page.cover %}
+            <img src="{{page.cover | relative_url}}" alt="" class="w-100 postpage-cover" />
+            {% endif %}
+        </div>
+        <hr>
+        <div class="postpage-content">
+            {{content}}
+        </div>
+        {% include share-buttons.html %}
+        <hr>
+        {% if site.disqus or page.disqus %}
+        <section class="post-full-comments">
+            <div id="disqus_thread"></div>
+            <script>
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document,
+                    s = d.createElement('script');
+                s.src = 'https://palasherabhijan.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments!</a></noscript>
+        </section>
+        {% endif %}
+    </div>
+</div>
+<br>
+<br>

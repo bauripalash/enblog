@@ -1,0 +1,112 @@
+---
+layout: default
+---
+<!-- Start: Navigation Clean -->
+<nav class="navbar navbar-light navbar-expand-md navigation-clean">
+    <div class="container"><a class="navbar-brand" href="/">PALASH BAURI 👻</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navcol">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item" role="presentation"><a class="nav-link active" href="/">HOME</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="/about">ABOUT</a></li>
+                <li class="nav-item" role="presentation"><a target="_blank" class="nav-link" href="https://palashbauri.in">বাংলায় পড়ুন</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End: Navigation Clean -->
+<!-- Start: 1 Row 2 Columns -->
+<div>
+    <div class="container" >
+        <div class="row" style="">
+            <div class="col-md-6">
+                <img src="{{ site.url }}/{{ site.banner_cover }}" style="filter: blur(0px) brightness(109%) contrast(162%) grayscale(0%) hue-rotate(323deg) invert(0%) saturate(168%) sepia(0%);" alt="" class="w-100" />
+                <br /><br />
+            </div>
+            <!-- /.col-md-6 -->
+            <div class="col-md-6">
+                <div class="row align-items-center h-100">
+                    <div class="col text-center">
+                        <!-- <img src="assets/img/palash.jpeg" width="40%" class=" rounded-circle"> -->
+                        <h1 style="color:#000f62"><strong>Adventure of Palash 👻&nbsp;</strong></h1>
+                        <p style="color:#115f93">Lunatic Boy's Blog to Make the World a Better Place... 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- /.col-md-6 -->
+        </div>
+        
+        <!-- /.row -->
+        <hr style="height: 8px;width:60%;margin-top : 35px; background-color: #115f93;" />
+        <div class="container">
+            {% if paginator.page > 1 %}
+            <div class="row align-items-center h-100">
+                <div class="col text-center">
+                    <h2 style="color:#115f93">পৃষ্ঠা - {{ paginator.page}} </h2>
+                </div>
+            </div>
+            {% endif %}
+            <br><br>
+            <div class="mx-auto text-center" style="max-width:1050px;">
+                <div class="row align-items-center">
+                    <!-- {% for post in paginator.posts %}
+                    
+
+                    <div class="col-md-6">
+                        <a class="post-link-a" href="{{post.url}}">
+                        <div class="card" style="margin-bottom: 10px;">
+                            <img src="{{post.cover | relative_url}}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title post-title">{{ post.title | escape }}</h3>
+                                <div class="card-text post-description">{{ post.content | strip_html | truncatewords: 40 }}</div><br>
+                                
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                    
+                    {% endfor %} -->
+                    <h3 class="text-center" style="color:#000f62;margin-left: auto;margin-right: auto;"><strong>Oppss No Article! 👻&nbsp;</strong></h3>
+                </div>
+            </div>
+            
+            <!-- post list -->
+
+
+<!-- pagination -->
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+  {% else %}
+    <span>&laquo; Prev</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <span class="pagi">{{ page }}</span>
+    {% elsif page == 1 %}
+      <a class="pagi-num"  href="/">{{ page }}</a>
+    {% else %}
+      <a class="pagi-num" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+  {% else %}
+    <span>Next &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}
+        </div>
+    </div>
+
+
+
+</div>
+</div>
+<!-- End: 1 Row 2 Columns -->
+<!-- Start: 1 Row 2 Columns -->
+<div>
+    <!-- End: 1 Row 2 Columns -->
