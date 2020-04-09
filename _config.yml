@@ -23,6 +23,8 @@ permalink: /en/:title
 paginate: 6
 paginate_path: /page:num/
 
+markdown: kramdown
+highlighter: rouge
 
 # Build settings
 #theme: moving # note, please use huangyz0918/moving if you want to publish to Github Pages.
