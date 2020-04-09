@@ -46,14 +46,11 @@ From the above analysis we can conclude that , younger people are mostly infecte
 Stay Home. Stay Safe.
 
 ----
-
-
-
 ##### Footnotes
 
 <a class="anchor" id="1">Python Script to Convert Crowdsourced JSON Data to CSV : </a>
 
-```python
+```
 import json
 import pandas as pd
 import sys
