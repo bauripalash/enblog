@@ -11,7 +11,7 @@ tags:
 cover: assets/img/ica-9-4.png
 disqus: true
 ---
-# Young People Are Most Infected from COVID-19 in India
+## Young People Are Most Infected from COVID-19 in India
 
 #### Analysis by , Palash Bauri , on 9 April , 2020
 
@@ -79,16 +79,9 @@ def main():
     
 main()        
 ```
-
-
-
 #### References
 
 <a class="anchor" id="2">[2] WHO Myth busters</a> : <https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters>
-
-
-
-
 
 ---
 
