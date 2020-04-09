@@ -50,7 +50,7 @@ Stay Home. Stay Safe.
 
 <a class="anchor" id="1">Python Script to Convert Crowdsourced JSON Data to CSV : </a>
 
-```
+{% highlight python %}
 import json
 import pandas as pd
 import sys
@@ -75,7 +75,8 @@ def main():
         print("FAILED")
     
 main()        
-```
+{% endhighlight %}
+
 #### References
 
 <a class="anchor" id="2">[2] WHO Myth busters</a> : <https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters>
