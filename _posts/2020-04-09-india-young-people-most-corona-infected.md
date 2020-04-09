@@ -49,7 +49,7 @@ Stay Home. Stay Safe.
 #### Footnotes
 
 <a class="anchor" id="1">Python Script to Convert Crowdsourced JSON Data to CSV : </a>
-<script src="https://gist.github.com/bauripalash/58af1e68a2b67b0a8cd189183f2e139b.js"></script>
+<div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 56.2493%;"><a href="https://gist.github.com/bauripalash/58af1e68a2b67b0a8cd189183f2e139b" data-iframely-url="//cdn.iframe.ly/3HuqFG8"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 
 #### References
 
