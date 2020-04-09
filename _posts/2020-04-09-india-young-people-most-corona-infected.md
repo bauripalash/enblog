@@ -11,13 +11,13 @@ tags:
 cover: assets/img/ica-9-4.png
 disqus: true
 ---
-## Young People Are Most Infected from COVID-19 in India
+#### Young People Are Most Infected from COVID-19 in India
 
-#### Analysis by , Palash Bauri , on 9 April , 2020
+**Analysis by , Palash Bauri , on 9 April , 2020**
 
 ---
 
-### Analysis Of Age Distribution among COVID-19 infected people in India. 
+**Analysis Of Age Distribution among COVID-19 infected people in India.**
 
 **Summary :**  
 
@@ -46,7 +46,7 @@ From the above analysis we can conclude that , younger people are mostly infecte
 Stay Home. Stay Safe.
 
 ----
-##### Footnotes
+#### Footnotes
 
 <a class="anchor" id="1">Python Script to Convert Crowdsourced JSON Data to CSV : </a>
 
